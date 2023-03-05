@@ -1,6 +1,6 @@
-import css from "../modules/App.module.css"
+import css from "./App.module.css";
 import PropTypes from "prop-types";
-import user from "../user.json"
+import user from "./user.json";
 const Description = ({ avatar, username,location,tag }) => (
   <div className={css.description}>
     <img
@@ -28,7 +28,7 @@ const Stats = ()=> (
 </ul>
 
 );
-export const App = (children) => {
+export const Profile = (children) => {
   return (
     <div className={css.app}>
       <Description username={user.username}
