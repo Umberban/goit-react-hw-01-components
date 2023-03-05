@@ -7,10 +7,11 @@ import './index.css';
 import PropTypes from "prop-types";
 import data from "./statist/data.json";
 import friendList from "./FriendList/friends.json";
+import user from "./social card/user.json";
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    {/* <Profile/>
-    <Statistics array={data} title="Upload stats" /> */}
+    <Profile data={user}/>
+    <Statistics array={data} title="Upload stats" />
     <FriendList array = {friendList}/>
   </React.StrictMode>
 );

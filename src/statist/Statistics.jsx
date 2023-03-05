@@ -1,8 +1,6 @@
 import css from "./Statistics.module.css";
 import PropTypes from "prop-types";
-// const Item= ({data}) =>(
 
-// )
 export const Statistics = ({array ,title})=>{
     return(
 <section className={css.statistics}>

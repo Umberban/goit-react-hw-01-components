@@ -1,15 +1,15 @@
 import css from "./FriendList.module.css";
 import PropTypes from "prop-types";
-import data from "./friends.json";
-
+import FriendListItem from './FriendListItem';
 
 export const FriendList = ({array})=>{
-    return( <ul className="friend-list">
+    return( <ul className={css.friendList}>
     {array.map(item => (<li key={item.id} className={css.item}>
-        <img src={item.avatar} alt="profile-avatar" className={css.image}/>
-        <p className={css.name}>{item.percentage}</p>
+        <FriendListItem friend={item}/>
       </li> ))}
   </ul>
 )
-
+} 
+FriendList.propTypes = {
+  array:PropTypes.array.isRequired,
 }
