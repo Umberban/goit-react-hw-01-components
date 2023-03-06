@@ -22,3 +22,6 @@ export const TransactionHistory = ({data})=>{
   </tbody>
 </table>)
 }
+TransactionHistory.propTypes={
+    data:PropTypes.array,
+};
