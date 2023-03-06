@@ -1,13 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import { Profile } from 'social card/App';
-import { Statistics } from 'statist/Statistics';
-import { FriendList} from 'FriendList/FriendList';
+import { Profile } from 'components/socialCard/socialCard';
+import { Statistics } from 'components/statist/Statistics';
+import { FriendList} from 'components/friendList/FriendList';
 import './index.css';
-import PropTypes from "prop-types";
-import data from "./statist/data.json";
-import friendList from "./FriendList/friends.json";
-import user from "./social card/user.json";
+import data from "./components/statist/data.json";
+import friendList from "./components/friendList/friends.json";
+import user from "./components/socialCard/user.json";
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <Profile data={user}/>
