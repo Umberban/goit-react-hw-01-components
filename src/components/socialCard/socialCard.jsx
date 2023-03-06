@@ -1,6 +1,5 @@
 import css from "./socialCard.module.css";
 import PropTypes from "prop-types";
-import user from "./user.json";
 
 export const Profile = ({data:{stats,avatar,username,location,tag }}) => {
   return (
